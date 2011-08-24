@@ -1,0 +1,8 @@
+:javascript
+  $(document).ready(function() {
+    get_location();
+  });
+%form{ :action => "/here", :method => "post"}
+  %input.postLocation{ :type => "submit", :value => "I'm here!", :disabled => true }/
+  %input.latitude{ :type => "hidden" }/
+  %input.longitude{ :type => "hidden" }/
